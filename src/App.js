@@ -17,10 +17,6 @@ const App = () => {
         setMovies(data.Search);
     }
 
-    useEffect(() => {
-        document.getElementById('message').innerText = 'Movies will be displayed here!';
-    }, []);
-
     const handleKeyDown = (e) => {
         if(e.key === 'Enter') {
             searchMovies(searchTerm);
