@@ -18,7 +18,7 @@ const App = () => {
     }
 
     useEffect(() => {
-
+        document.getElementById('message').innerText = 'Movies will be displayed here!';
     }, []);
 
     const handleKeyDown = (e) => {
@@ -44,7 +44,7 @@ const App = () => {
                     </div>
                 ) : (
                     <div className='empty'>
-                        <h2>No movies found!</h2>
+                        <h2 id="message">No movies found!</h2>
                     </div>
                 )}
         </div>
